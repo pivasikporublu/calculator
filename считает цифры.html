@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сча насчитаю жоска</title>
+    <style> body { display: flow-root; 
+        margin: auto; 
+        width: 400px;
+        height: 400px;
+    }  
+        #display, button {
+            width: 100px;
+            padding: 20px;
+            margin: 20px;
+            border: 10px;
+            border-radius: 10px;
+            background: navy;
+            color: crimson;
+        }
+        #xdxd {
+            width: 535px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body  background="https://i.artfile.me/wallpaper/26-02-2014/1920x1080/eda-napitki--pivo-bokal-pena-801606.jpg">
+ <input id="xdxd">
+        </div>
+        <table>
+            <tr>
+              <td>
+                  <table border="50" background="https://i.pinimg.com/originals/66/12/e2/6612e2d02db90bfa78fd4afb2e2dc15c.jpg" bordercolor="springgreen" bgcolor="deeppink">
+                    <tr> 
+                        <td><button onclick="press('1')">1</button></td>
+                        <td><button onclick="press('2')">2</button></td>
+                        <td><button onclick="press('3')">3</button></td>
+                    </tr>
+                    <tr> 
+                        <td><button onclick="press('4')">4</button></td>
+                        <td><button onclick="press('5')">5</button></td>
+                        <td><button onclick="press('6')">6</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="press('7')">7</button></td>
+                        <td><button onclick="press('8')">8</button></td>
+                        <td><button onclick="press('9')">9</button></td>
+                    </tr>
+                     <tr>
+                        <td><button onclick="cxd()">c</button></td>
+                        <td><button onclick="press('0')">0</button></td>
+                        <td><button onclick="calc()">=</button></td>
+                    </tr>
+                </table>
+              </td>
+              <td>         
+                  <table border="25" bordercolor="springgreen" bgcolor="deeppink">
+                    <tr> 
+                        <td><button onclick="press('+')">+</button></td>
+                     </tr>
+                     <tr> 
+                        <td><button onclick="press('-')">-</button></td>
+                     </tr>
+                     <tr> 
+                        <td><button onclick="press('*')">x</button></td>
+                     </tr>
+                     <tr> 
+                        <td><button onclick="press('/')">/</button></td>
+                     </tr>
+                  </table>      
+              </td>
+            </tr>
+          </table>
+    <script>
+        let result = document.getElementById("xdxd");
+        function press(x) {
+            result.value += x;
+        }
+        function cxd() {
+            result.value = "";
+        }
+    function calc() {
+    result.value = eval(result.value);
+        }
+    </script>
+</body>
+</html>
